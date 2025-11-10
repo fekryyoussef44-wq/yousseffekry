@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return 'التسجيل بهذه الطريقة غير مفعّل. (خطأ من طرف مسؤول الموقع)';
                 default:
                     console.error("Firebase Error: ", errorCode); 
-                    return 'حدث خطأ غير متوقع. حاول مرة أخرى.';
+                    return 'كلمة المرور غير صحيحة، حاول مجددًا';
             }
         }
     }
