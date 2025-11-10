@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنهج الكشفي - كشافة مارمينا المندرة</title>
+
+    <!-- (مكتبات الفايربيز) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="protected"> <!-- (علامة مميزة لصفحة محمية) -->
+
+    <!-- 1. الشريط العلوي (الذكي) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/1001340900.jpg" alt="شعار كشافة مارمينا المندرة">
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="gallery.html">معرض الصور</a></li>
+                <li><a href="schedule.html">المواعيد</a></li>
+                <li><a href="manhag.html" class="active">المنهج الكشفي</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+                
+                <li id="login-btn-li"><a href="register.html" class="btn-register">تسجيل/دخول</a></li>
+                
+                <li id="user-welcome-li" class="user-welcome">
+                    <span id="user-welcome-text">أهلاً يا فلان</span>
+                </li>
+                
+                <li id="logout-btn-li" class="logout-btn">
+                    <a>تسجيل خروج</a>
+                </li>
+            </ul>
+
+            <div class="header-socials">
+                <a href="KEK_YOUTUBE_LINK" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="KEK_TIKTOK_LINK" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- (1) جدار الحماية (بيظهر للزوار) -->
+    <section class="section auth-wall" id="auth-wall">
+        <div class="container">
+            <div class="glass-card">
+                <h2><i class="fas fa-lock"></i> محتوى خاص بالأعضاء</h2>
+                <p>هذه الصفحة (المنهج الكشفي) خاصة بأعضاء الكشافة فقط. من فضلك سجل دخولك لتتمكن من تحميل المنهج.</p>
+                <a href="register.html" class="btn">تسجيل الدخول / إنشاء حساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- (2) المحتوى الحقيقي (بيظهر للأعضاء المسجلين) -->
+    <section id="protected-content" class="section manhag-section">
+        <div class="container">
+            <h2><i class="fas fa-book-open"></i> المنهج الكشفي</h2>
+            <p>هنا هتلاقي كل المناهج (PDF) الخاصة بالفريق وتاريخ الحركة الكشفية.</p>
+            
+            <a href="assets/منهج كشفي.pdf" class="btn" target="_blank">تحميل المنهج الكشفي (PDF)</a>
+            <a href="#" class="btn btn-secondary">تاريخ الكشافة (قريباً)</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 | جميع الحقوق محفوظة لكشافة مارمينا المندرة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
